@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms radio and checkbox</title>
+  </head>
+  <body>
+    <!-- radio buttons how to use -->
+    <!-- in form tag we use name atrribute to store the values selected by user in that field in db. its basically the Table name -->
+    <!-- Value attribute is value that needs to be stored when we use radio or checkbox or options and select the box. that paricular value will be stored. -->
+    <!-- id and for attribute in input and label tag is used to create link between the label and the buttons. we can select our option by clicking on the radio button or clicking on the label  -->
+    <form action="./First.html" method="post">
+      <label>Gender pls</label> <br />
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female" /><label
+        for="female"
+        >Female</label
+      ><input type="radio" name="gender" value="others" id="others" /><label
+        for="others"
+        >Others</label
+      ><br />
+      <br />
+      <!-- checkboxes -->
+      <label>Skills</label><br />
+      <input id="A" type="checkbox" name="Skills" value="java" /><label for="A"
+        >Java</label
+      >
+      <input id="B" type="checkbox" name="Skills" value="c" /><label for="B"
+        >C</label
+      ><input id="C" type="checkbox" name="Skills" value="python" /><label
+        for="C"
+        >Python</label
+      >
+      <input type="submit" value="Go" />
+
+      <br /><br /><br />
+
+      <select name="Food" multiple>
+        <optgroup label="Non veg">
+          <option>Kebab</option>
+          <option>Biryani</option>
+          <option>Chicken Masala</option>
+        </optgroup>
+
+        <optgroup label="Veg">
+          <option>Dosa</option>
+          <option>Idly</option>
+          <option>Rice bath</option>
+        </optgroup>
+      </select>
+
+      <br /><br /><br />
+      <input type="text" placeholder="college name" list="coll" />
+      <datalist id="coll">
+        <option>BMSIT</option>
+        <option>RNSIT</option>
+        <option>NMIT</option>
+        <option>PES</option>
+        <option>RVIT</option>
+      </datalist>
+    </form>
+  </body>
+</html>

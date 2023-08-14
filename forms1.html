@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="./index.html">
+      <!-- every form feild should have required and name attribute. required enforces the user to put data in the fields and only then he can press on submit. name attribute helps to store the data in backend in that particular name -->
+      <h1>Forms</h1>
+      <input type="text" placeholder="username" maxlength="10" required /><br />
+      <input type="email" placeholder="email" required /><br />
+      <input
+        type="Password"
+        placeholder="Password"
+        maxlength="12"
+        minlength="6"
+        required
+      />
+      <br />
+
+      <input type="url" placeholder="url" required /><br />
+      <input
+        required
+        type="number"
+        name="phone"
+        placeholder="Phone No."
+        min="1000000000"
+        max="10000000000"
+      />
+      <!-- we cant use maxlenght attribute for number type but only on attributes which has characters like text,password,email etc  -->
+      <br />
+      <label>Adhar card:</label>
+      <input type="file" placeholder="adhar card" accept="application/pdf" />
+      <!-- accept value for image,csv,audio,pdf,videos are "image/*",".csv","audio/*","application/*","video/*"  -->
+      <input type="search" placeholder="search" />
+      <br />
+      <label>DOB:</label>
+      <input type="date" /><br />
+      <label>Login Time</label>
+      <input type="time" /><br />
+      <label>Date & Time</label>
+      <input type="datetime-local" /><br />
+      <textarea name="" id="" cols="300" rows="10">address</textarea>
+
+      <button type="reset">Clear</button>
+      <input type="submit" value="Go" />
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
